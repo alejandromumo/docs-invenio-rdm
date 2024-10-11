@@ -32,7 +32,9 @@ BREAKING -> mapping changes, create new indices
 
 ### Collections
 
-Collections are a "big" feature added to v13. 
+Collections are a "big" feature added to v13.
+
+!!!warning Collections require new database tables, therefore its migration recipes must be executed (`invenio db upgrade` or similar)
 
 Collections are stored in the Database and each collection defines a search query string that is used to fetch each collection records. Find more information in the [RFC](https://github.com/inveniosoftware/rfcs/blob/master/rfcs/rdm-0079-collections.md).
 
